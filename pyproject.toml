@@ -1,0 +1,21 @@
+[project]
+name = "lanwatch"
+dynamic = ["version"]
+dependencies = [
+    "requests",
+    'importlib-metadata; python_version<"3.10"',
+]
+
+[build-system]
+requires = ["setuptools>=64", "setuptools-scm>=8"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+version_file = "lanwatch/_version.py"
+
+[tool.setuptools.packages.find]
+# All the following settings are optional:
+where = ["src"]  # ["."] by default
+include = ["lanwatch*"]  # ["*"] by default
+exclude = ["lanwatch.tests*"]  # empty by default
+namespaces = false  # true by default
