@@ -11,7 +11,8 @@ keywords = ["arp", "scan", "arp-scan", "monitor", "watch", "alert"]
 requires-python = ">= 3.8"
 dependencies = [
     "requests",
-    "nicegui>=2.0.0"
+    "nicegui>=2.0.0",
+    yaml
 ]
 authors = [
   {name = "Ingo Ratsdorf", email = "ingo@envirology.co.nz"}
